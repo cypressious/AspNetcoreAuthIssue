@@ -9,13 +9,13 @@ namespace AspAuthIssue.Controllers
     public class ValuesController : ControllerBase
     {
         [AllowAnonymous]
-        [HttpPost("post")]
+        [HttpGet("bar")]
         public void Foo()
         {
         }
 
         [Authorize(AuthenticationSchemes = "Basic")]
-        [HttpGet("get")]
+        [HttpGet("foo")]
         public string Get() => "OK";
     }
 }

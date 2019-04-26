@@ -1,0 +1,8 @@
+GET localhost:5010/foo
+Authorization: Basic YWRtaW46YWRtaW4=
+
+###
+
+POST localhost:5010/bar
+
+###
