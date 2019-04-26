@@ -5,17 +5,18 @@ namespace AspAuthIssue.Controllers
 {
     [Authorize]
     [Route("")]
-    [ApiController]
     public class ValuesController : ControllerBase
     {
         [AllowAnonymous]
         [HttpGet("bar")]
-        public void Foo()
+        public void Bar()
         {
         }
 
         [Authorize(AuthenticationSchemes = "Basic")]
         [HttpGet("foo")]
-        public string Get() => "OK";
+        public void Foo()
+        {
+        }
     }
 }
